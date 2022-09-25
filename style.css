@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Agregar interlineado en el párrafo del banner */
+/*  Agregar li en el header que diga CONFERENCIA BS AS a la derecha del logo */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    box-sizing: border-box;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    width: 100vw;
+}
+
+header>nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: darkgray;
+    transition: all .5s ease;
+
+}
+
+header>nav>ul>li:last-child>a{
+    color: forestgreen;
+}
+
+header>nav>ul>li>a:hover{
+    color: white;
+}
+
+/* Clases propias */
+
+.logo{
+    filter: drop-shadow(1px 1px 1px rgb(67, 66, 66))
+}
+
+.bannerPrincipal{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    background: url("./assets/bannerPrincipal.webp"), rgba(0, 0, 0, 0.662);
+    background-blend-mode: color;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+    overflow: hidden;
+    padding: 10% 2% 10% 40vw;
+}
+
+.bannerPrincipal>h1{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.bannerPrincipal>div>button{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.button1{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.button1:hover{
+    color: black;
+    background-color: white;
+}
+
+.button2{
+    background-color: #198754;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button2:hover{
+    opacity:0.7;
+}
+
+/* cards */
+
+.titleCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+
+}
+
+.titleCards>div:first-child{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.titleCards>div:last-child{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    /* flex-direction: column; */
+    width: 300px;
+    height: auto;
+    border: 1px solid rgba(220, 220, 220, 0.911);
+}
+
+.card__image{
+    width: 100%;
+    height: 300px;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.imgA{
+    background-image: url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/site/2147489095/podcasts/fsAx0HB5Qk3rGHWe9kTR_insta_copy.jpg");
+
+}
+
+.imgB{
+    background-image: url("https://pbs.twimg.com/media/FblrSAOWAAAtvdv?format=jpg&name=large");
+}
+
+.imgC{
+    background-image: url("https://pbs.twimg.com/profile_images/938209836549988352/JzWzLyOY_400x400.jpg");
+}
+
+.card__text{
+    margin: 0 5px 10px 5px;
+}
+
+.card__text--subtitleA{
+    background-color: rgb(255, 255, 0);
+    font-size: small;
+    font-weight:bold;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+
+.card__text--subtitleB{
+    background-color:rgb(91, 192, 222);
+    color: white;
+    font-size: small;
+    font-weight:bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.card__text--subtitleC{
+    background-color: grey;
+    color: white;
+    font-size: small;
+    font-weight:bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.card__text--subtitleD{
+    background-color: rgb(203, 32, 32);
+    color: white;
+    font-size: small;
+    font-weight:bold;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+
+.card__text--title{
+    /* font-weight: 600; */
+    margin: 10px 0;
+}
+
+.card__text--description{
+    font-size: 14px;
+}
+
+/* Publicidad */
+
+
+/* Footer */
+footer{
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.9682247899159664) 0%, rgb(3, 64, 95) 36%, rgb(2, 74, 102) 100%);
+    /* background-color: #333; */
+    /* width: 100vw; */
+}
+
+footer>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+footer>ul>li{
+    width: 10%;
+    text-align: center;
+}
+
+footer>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 15px;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .bannerPrincipal{
+        padding: 5% 2% 5% 20vw;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .bannerPrincipal{
+        padding: 0 2% 0 10vw;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .bannerPrincipal>h1{
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+    
+    .bannerPrincipal>div>button{
+        padding: 8px 18px;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
